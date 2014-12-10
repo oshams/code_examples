@@ -4,7 +4,7 @@ import math
 
 #How do you remove points on a 2d grid that are below noise level -- ie generateed by a uniform random probability distribution?  
 #This method removes noise from a 2d grid at a given sigma level and grid length. e.g. num_of_sigma = 5, grid_len = 10 means that all points  <= 5 standard devs below mean distrubtion on a 10x10 board will be removed
-#The method both returns the indices of values to be removed, as well as the values to keep. Can be easily, tailored to be more specific
+#The method both returns the indices of values to be removed, as well as the values to keep. Can be easily tailored to more specific purposes
 def remove_noise(x_vals,y_vals,num_of_sigma,grid_len):
     x_vals = np.array(x_vals)
     y_vals = np.array(y_vals)
